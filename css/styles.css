@@ -1,0 +1,618 @@
+#header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/fondito.jpg);
+    font-style: arial;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+.h1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.nav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0;
+    padding: 0;
+    background-color: #dae0d7;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.nav ul{
+    font-style: arial;
+    margin: 0;
+    padding: 0;
+}
+.nav ul li{
+    display: inline-block;
+}
+
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #5b678c;
+    padding: 1rem 1rem;
+}
+
+.nav ul li a:hover{
+    background-color: #faa97d;
+}
+
+@media screen and (min-width:480px){
+    #header .h1{
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+    }  
+
+    .nav{
+       margin: 10px;
+       padding: 10px;
+       border-radius: 4%;
+    }
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    background-image: url(../img/probandoimagenes.webp); 
+    background-size: cover; 
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#main .subtitulo {
+    grid-column-start:2;
+    grid-column-end:3;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+#main .personales{
+ position: relative;
+ left: 4%;
+ grid-row-start:2;
+ grid-row-end:2;
+ grid-column-start: 1;
+ grid-column-end: 1;
+ align-items: center;
+ justify-items: center;
+ font-size: 2.5rem;
+}
+
+#main .personales ul{
+    color:#f2b21d;
+    list-style: square;
+}
+
+#main .patrimoniales{
+    position: relative;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    justify-items: center;
+    
+}
+#main .patrimoniales ul{
+    color:#f2b21d;
+    list-style: square;
+
+}
+.aside{
+ grid-row-start: 2;
+ grid-row-end: 3;
+ grid-column-start: 3;
+ grid-column-end: 3;
+ font-size: 2.5rem;
+}
+#aside h2{
+    display: block;
+    font-size: 2rem;
+    padding: 55;
+    margin: 55;
+    position: relative;
+    left: 35%;
+    bottom: 70px;
+}
+#aside h3{
+    display: block;
+    position: relative;
+    left: 10%;
+}
+
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(2, 10rem);
+    background-color:#a3b3ac;
+    justify-items: center;
+    
+}
+#footer .terminos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: black;
+}
+#footer .trabaja{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    font-size: 1rem;
+    color: black;
+}
+#footer .politica{
+    display: flex;
+    justify-content: center;
+        align-items: center;
+    font-size: 1rem;
+    color: black;
+}
+#footer .atencion{
+    display: flex;
+    justify-items: center;
+    font-size: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+#footer .ul{
+    display: flex;
+    align-items: column;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1rem;
+}
+#footer .redes{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1rem;
+}
+#footer .uls{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 1rem;
+}
+
+
+/*                             EMPIEZA LA PAG "Trayectoria.html                    */
+#mains{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    background-image: url(../img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg); height: 1000px; width: cover; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.h22{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 4rem;
+    color: white;
+}
+.texto{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    position: relative;
+    bottom: 5%;
+    font-style: italic;
+    color:white;
+    font-size: 2rem;
+}
+@media (min-width:320px){
+    #mains .texto{
+        font-size: 1rem;
+    }
+    #mains .h22{
+        font-size: 1.5rem;
+    }
+    
+}
+@media (min-width:480px){
+    #mains .texto{
+        font-size: 1.5rem;
+    }
+    #mains .h22{
+        font-size: 3rem;
+    }
+    
+}
+@media (min-width:1024px){
+    #mains .texto{
+        font-size: 2rem;
+    }
+    #mains .h22{
+        font-size: 3rem;
+    }
+}
+/*                             EMPIEZA LA PAG "PERSONALES.HTML"                    */
+
+
+#mainperso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+@media (min-width:320px){
+
+    #mainperso .segurosp{
+        font-size: 2rem;
+    }
+}
+@media (min-width:1024px){
+    #mainperso{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    #mainperso .segurosp{
+        display: flex;
+        justify-content: center;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    #mainperso .fotocasa{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #mainperso .accidente{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #mainperso .educativo{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #mainperso .deretiro{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+   
+}
+
+.segurosp{
+    display: flexbox;
+    font-size: 3rem;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #f2b21d;
+    border-radius: 10px;
+}
+.fotocasa{
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371)
+}
+.accidente{
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371)
+}
+#mainperso .acs{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+#mainperso .h3s{
+text-align:center
+}
+.educativo{
+    border: solid 2px black;
+    border-radius: 10px;
+    background: linear-gradient(to left, #ff5f6d , #ffc371);
+    margin: 2rem;
+    padding: 2rem;
+    position: relative;
+}
+.deretiro{
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371)
+}
+ 
+/*                             EMPIEZA LA PAG "Empresariales.html"                    */
+
+ #mainempresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.h2empresariales{
+    background-color: #f2b21d;
+    position: relative;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 3rem;
+    border-radius: 10px;
+}
+.foto1{
+    border: solid 3px black;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371);
+    border-radius: 10px;
+}
+.foto2{
+    border: solid 3px black;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #36d1dc , #5b86e5);
+    border-radius: 10px;
+}
+
+.foto3{
+    border: solid 3px black;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #eacda3 , #d6ae7b);
+    border-radius: 10px;
+}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.h4empresa{
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-size: 1.5rem;
+    position: relative;
+    
+    background-color: #f2b21d; 
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+
+
+}
+@media (min-width:800px){
+    #mainempresa{
+        display: grid;
+        grid-template-columns: repeat(3,33.3%);
+        grid-template-rows: repeat(3,2fr);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #mainempresa .h2empresariales{
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #mainempresa .foto1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .foto2{
+        grid-column:2 / 3;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .foto3{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .h4empresa{
+        grid-column: 2 / 3;
+        font-size: 2rem;
+    }
+}
+
+/*                             EMPIEZA LA PAG "Contacto.html"                    */
+#mainz{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-color: black;
+    border-style: double;
+    border-radius: 2%;
+    align-content: center;
+    justify-items: center;
+       
+}
+@media (min-width:400px){
+    #mainz .form{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+}
+
+.contactoz{
+    color: rgb(175, 69, 30);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height: 3rem;
+    font-size: 2rem;
+}
+.form{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color:beige;
+    
+}
+.nombre{
+    display: flex;
+    justify-content: center;
+} 
+
+
+
+            /*PRUEBAS MEDIAQ PARA INDEX*/
+
+
+@media (min-width:320px){
+    #header{
+     display: flex;
+    flex-wrap: wrap;
+    color: coral;
+    }
+    .h1{
+        font-size: 25px;
+    }
+    /*Termina la sección header
+     comienza main*/
+        #main{
+         display: flexbox;
+         position: relative;
+        }
+             #main .subtitulo{
+        position: relative;
+        font-size: 1.5rem;
+        bottom: 5%;
+        }
+         #main .personales{
+            position: relative;
+            left: 15%;
+            font-size: 1rem;
+        }
+           #main .patrimoniales{
+         position: relative;
+          left: 15%;
+         font-size: 1rem;
+        }
+          #main .aside{
+          font-size: 1rem;
+          position: relative;
+         right: 20%;
+         top: 25%;
+         }
+        } 
+    /*Termina la sección main
+     comienza footer*/
+      @media (min-width:320px){
+        #footer .atencion{
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            
+        }
+        #footer .ul{
+            font-size: 13px;
+            color: coral;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        #footer .uls{
+            color: coral;
+            font-size: 13px;
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            align-content:center ; 
+        } 
+    }
+    @media (min-width:1024px){
+        #footer .atencion{
+            font-size: 1.2rem;
+            position: relative;
+            bottom: 5%;
+        }
+        #footer .ul{
+            font-size: 1.2rem;
+        }
+        #footer .trabaja{
+            font-size: 1.2rem;
+        }
+        #footer .terminos{
+            font-size: 1.2rem;
+        }
+        #footer .politica{
+            font-size: 1.2rem;
+        }
+        #footer .redes{
+            font-size: 1.2rem;
+            position: relative;
+            bottom: 5%;
+        }
+        #footer .uls{
+            font-size: 1.2rem;
+        }
+        
+    }
