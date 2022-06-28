@@ -498,7 +498,7 @@ text-align:center
 }
 
 .contactoz{
-    color: rgb(175, 69, 30);
+    color: darkcyan;
     display: flex;
     justify-items: center;
     justify-content: center;
@@ -618,3 +618,4 @@ text-align:center
         }
         
     }
+
