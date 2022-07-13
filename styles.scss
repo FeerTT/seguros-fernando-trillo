@@ -1,65 +1,29 @@
-#header{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/fondito.jpg);
-    font-style: arial;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-}
-.h1{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-.nav{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 0;
-    padding: 0;
-    background-color: #dae0d7;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-.nav ul{
-    font-style: arial;
-    margin: 0;
-    padding: 0;
-}
-.nav ul li{
-    display: inline-block;
+//variables para acortar texto
+$color-principal: #f2b21d;
+$color-secundario: white;
+$estilos-listas: square;
+
+//aplicando mixin para facilitar página personales.html
+@mixin cuadrado {
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371);
 }
 
-.nav ul li a{
-    display: block;
-    text-decoration: none;
-    color: #5b678c;
-    padding: 1rem 1rem;
-}
-
-.nav ul li a:hover{
-    background-color: #faa97d;
-}
-
-@media screen and (min-width:480px){
-    #header .h1{
-        font-size: 25px;
-        margin: 10px;
-        padding: 10px;
-    }  
-
-    .nav{
-       margin: 10px;
-       padding: 10px;
-       border-radius: 4%;
-    }
+//aplicando mixin con distintos colores para facilitar página empresariales.html
+@mixin cuadro ($colorfondo) { 
+    background: $colorfondo;
+    border: solid 3px black;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;  
 }
 
 
+//codigo//
 #main{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -94,8 +58,8 @@
 }
 
 #main .personales ul{
-    color:#f2b21d;
-    list-style: square;
+    color:$color-principal;
+    list-style:$estilos-listas;
 }
 
 #main .patrimoniales{
@@ -111,8 +75,8 @@
     
 }
 #main .patrimoniales ul{
-    color:#f2b21d;
-    list-style: square;
+    color:$color-principal;
+    list-style:$estilos-listas;
 
 }
 .aside{
@@ -121,7 +85,7 @@
  grid-column-start: 3;
  grid-column-end: 3;
  font-size: 2.5rem;
- color: white;
+ color: $color-secundario;
 }
 #aside h2{
     display: block;
@@ -140,68 +104,6 @@
 }
 
 
-#footer{
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: repeat(2, 10rem);
-    background-color:#a3b3ac;
-    justify-items: center;
-    
-}
-#footer .terminos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    color: black;
-}
-#footer .trabaja{
-    display: flex;
-    justify-content: center;
-        align-items: center;
-    font-size: 1rem;
-    color: black;
-}
-#footer .politica{
-    display: flex;
-    justify-content: center;
-        align-items: center;
-    font-size: 1rem;
-    color: black;
-}
-#footer .atencion{
-    display: flex;
-    justify-items: center;
-    font-size: 1rem;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-#footer .ul{
-    display: flex;
-    align-items: column;
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1rem;
-}
-#footer .redes{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1rem;
-}
-#footer .uls{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    font-size: 1rem;
-}
 
 
 /*                             EMPIEZA LA PAG "Trayectoria.html                    */
@@ -210,7 +112,7 @@
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     position: relative;
-    background-image: url(../img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg); height: 1000px; width: cover; 
+    background-image: url(./img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg); height: 1000px; width: cover; 
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
@@ -228,7 +130,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     font-size: 4rem;
-    color: white;
+    color: $color-secundario;
 }
 .texto{
     grid-column-start: 1;
@@ -239,7 +141,7 @@
     position: relative;
     bottom: 5%;
     font-style: italic;
-    color:white;
+    color:$color-secundario;
     font-size: 2rem;
 }
 @media (min-width:320px){
@@ -270,18 +172,18 @@
 }
 /*CODIGO AGREGADO DE CAMBIOS RECIENTES ANTES DE 2DA ENTREGA*/
 .container{
-    color: white;
+    color: $color-secundario;
 }
 .text-center text-muted{
-    color: white;
+    color: $color-secundario;
 }
 .divisor{
-    color: white;
-    background-color: white;
+    color: $color-secundario;
+    background-color: $color-secundario;
 
 }
 .footer{
-    color: white;
+    color: $color-secundario;
 }
 #mainn{
     display: grid;
@@ -314,8 +216,8 @@
 }
 
 #mainn .personales ul{
-    color:#f2b21d;
-    list-style: square;
+    color:$color-principal;
+    list-style:$estilos-listas;
 }
 
 #mainn .patrimoniales{
@@ -331,8 +233,8 @@
     
 }
 #mainn .patrimoniales ul{
-    color:#f2b21d;
-    list-style: square;
+    color:$color-principal;
+    list-style:$estilos-listas;
 }
 
 @media (min-width:320px){
@@ -444,33 +346,6 @@
     }
 }
 
-.aside{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    font-size: 10px;
-    color: white;
-   }
-   #aside h2{
-       display: block;
-       font-size: 2rem;
-       padding: 55;
-       margin: 55;
-       position: relative;
-       left: 35%;
-       bottom: 70px;
-   }
-   #aside h3{
-       display: block;
-       position: relative;
-       left: 10%;
-       
-   }
-
-
-
-
 
 
 /*                             EMPIEZA LA PAG "PERSONALES.HTML"                    */
@@ -534,25 +409,14 @@
     position: relative;
     grid-column-start: 1;
     grid-column-end: 4;
-    background-color: #f2b21d;
+    background-color: $color-principal;
     border-radius: 10px;
 }
 .fotocasa{
-    border: solid 2px black;
-    border-radius: 10px;
-    position: relative;
-    margin: 2rem;
-    padding: 2rem;
-    background: linear-gradient(to left, #ff5f6d , #ffc371);
+    @include cuadrado;
 }
 .accidente{
-    border: solid 2px black;
-    border-radius: 10px;
-    position: relative;
-    background: linear-gradient(to left, #ff5f6d , #ffc371);
-    margin: 2rem;
-    padding: 2rem;
-    
+    @include cuadrado;
 }
 #mainperso .acs{
     display: flex;
@@ -565,20 +429,10 @@
 text-align:center
 }
 .educativo{
-    border: solid 2px black;
-    background: linear-gradient(to left, #ff5f6d , #ffc371);
-    border-radius: 10px;
-    margin: 2rem;
-    padding: 2rem;
-    position: relative;
+    @include cuadrado;
 }
 .deretiro{
-    border: solid 2px black;
-    border-radius: 10px;
-    position: relative;
-    background: linear-gradient(to left, #ff5f6d , #ffc371);
-    margin: 2rem;
-    padding: 2rem;
+    @include cuadrado;
     
 }
  
@@ -592,7 +446,7 @@ text-align:center
 
 }
 .h2empresariales{
-    background-color: #f2b21d;
+    background-color: $color-principal;
     position: relative;  
     display: flex;
     flex-direction: row;
@@ -602,33 +456,24 @@ text-align:center
     border-radius: 10px;
 }
 .foto1{
-    border: solid 3px black;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    background: linear-gradient(to left, #ff5f6d , #ffc371);
+   @include cuadro(linear-gradient(to left, #ff5f6d , #ffc371));
+    
 }
 .foto2{
-    border: solid 3px black;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    background: linear-gradient(to left, #36d1dc , #5b86e5);
+    @include cuadro(linear-gradient(to left, #36d1dc , #5b86e5));
+    
 }
 
 .foto3{
-    border: solid 3px black;
-    margin: 2rem;
-    padding: 2rem;
-    border-radius: 10px;
-    background: linear-gradient(to left, #eacda3 , #d6ae7b);
+    @include cuadro( linear-gradient(to left, #eacda3 , #d6ae7b));
+   
 }
 
 .parrafo{
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: white;
+    color: $color-secundario;
 }
 
 .h4empresa{
@@ -640,7 +485,7 @@ text-align:center
     font-size: 1.5rem;
     position: relative;
     
-    background-color: #f2b21d; 
+    background-color: $color-principal; 
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
@@ -726,7 +571,16 @@ text-align:center
     justify-content: center;
 } 
 
-
+.mapa{
+    display: flex;
+    justify-content: center;
+    
+}
+.parrafomapa{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
 
             /*PRUEBAS MEDIAQ PARA INDEX*/
 
@@ -768,61 +622,4 @@ text-align:center
          top: 25%;
          }
         } 
-    /*Termina la sección main
-     comienza footer*/
-      @media (min-width:320px){
-        #footer .atencion{
-            display: flex;
-            justify-items: center;
-            justify-content: center;
-            
-        }
-        #footer .ul{
-            font-size: 13px;
-            color: coral;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-        }
-        #footer .uls{
-            color: coral;
-            font-size: 13px;
-            margin: 0%;
-            padding: 0%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            align-content:center ; 
-        } 
-    }
-    @media (min-width:1024px){
-        #footer .atencion{
-            font-size: 1.2rem;
-            position: relative;
-            bottom: 5%;
-        }
-        #footer .ul{
-            font-size: 1.2rem;
-        }
-        #footer .trabaja{
-            font-size: 1.2rem;
-        }
-        #footer .terminos{
-            font-size: 1.2rem;
-        }
-        #footer .politica{
-            font-size: 1.2rem;
-        }
-        #footer .redes{
-            font-size: 1.2rem;
-            position: relative;
-            bottom: 5%;
-        }
-        #footer .uls{
-            font-size: 1.2rem;
-        }
-        
-    }
-
+       

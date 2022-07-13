@@ -1,0 +1,614 @@
+@charset "UTF-8";
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3fr);
+  background-image: url(../img/probandoimagenes.webp);
+  background-size: cover;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#main .subtitulo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#main .personales {
+  position: relative;
+  left: 4%;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  align-items: center;
+  justify-items: center;
+  font-size: 2.5rem;
+}
+
+#main .personales ul {
+  color: #f2b21d;
+  list-style: square;
+}
+
+#main .patrimoniales {
+  position: relative;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  justify-items: center;
+}
+
+#main .patrimoniales ul {
+  color: #f2b21d;
+  list-style: square;
+}
+
+.aside {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#aside h2 {
+  display: block;
+  font-size: 2rem;
+  padding: 55;
+  margin: 55;
+  position: relative;
+  left: 35%;
+  bottom: 70px;
+}
+
+#aside h3 {
+  display: block;
+  position: relative;
+  left: 10%;
+}
+
+/*                             EMPIEZA LA PAG "Trayectoria.html                    */
+#mains {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+  background-image: url(./img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg);
+  height: 1000px;
+  width: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.h22 {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 4rem;
+  color: white;
+}
+
+.texto {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: flex;
+  position: relative;
+  bottom: 5%;
+  font-style: italic;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (min-width: 320px) {
+  #mains .texto {
+    font-size: 1rem;
+  }
+  #mains .h22 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 480px) {
+  #mains .texto {
+    font-size: 1.5rem;
+  }
+  #mains .h22 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1024px) {
+  #mains .texto {
+    font-size: 2rem;
+  }
+  #mains .h22 {
+    font-size: 3rem;
+  }
+}
+/*CODIGO AGREGADO DE CAMBIOS RECIENTES ANTES DE 2DA ENTREGA*/
+.container {
+  color: white;
+}
+
+.text-center text-muted {
+  color: white;
+}
+
+.divisor {
+  color: white;
+  background-color: white;
+}
+
+.footer {
+  color: white;
+}
+
+#mainn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 3fr);
+  background-size: cover;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainn .subtitulo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+#mainn .personales {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  align-items: center;
+  justify-items: center;
+  font-size: 2.5rem;
+}
+
+#mainn .personales ul {
+  color: #f2b21d;
+  list-style: square;
+}
+
+#mainn .patrimoniales {
+  position: relative;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  justify-items: center;
+}
+
+#mainn .patrimoniales ul {
+  color: #f2b21d;
+  list-style: square;
+}
+
+@media (min-width: 320px) {
+  #mainn {
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(20, 5%);
+    font-size: 1rem;
+  }
+  #mainn .subtitulo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 1.2rem;
+  }
+  #mainn .personales {
+    position: relative;
+    top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    font-size: 1rem;
+  }
+  #mainn .patrimoniales {
+    position: relative;
+    top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;
+    font-size: 1rem;
+  }
+  #mainn .aside {
+    position: relative;
+    top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    font-size: 5px;
+  }
+  #mainn .creador {
+    position: relative;
+    top: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 19;
+  }
+}
+@media (min-width: 480px) {
+  #mainn .subtitulo {
+    font-size: 2rem;
+  }
+  #mainn .personales {
+    font-size: 1.5rem;
+  }
+  #mainn .patrimoniales {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #mainn {
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(10, 10%);
+  }
+  #mainn .subtitulo {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 3rem;
+  }
+  #mainn .personales {
+    position: relative;
+    top: 10%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    font-size: 2rem;
+  }
+  #mainn .patrimoniales {
+    position: relative;
+    top: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 2rem;
+  }
+  #mainn .aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;
+  }
+  #mainn .creador {
+    position: relative;
+    top: 80px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 10;
+  }
+}
+/*                             EMPIEZA LA PAG "PERSONALES.HTML"                    */
+#mainperso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  #mainperso .segurosp {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #mainperso {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainperso .segurosp {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  #mainperso .fotocasa {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .accidente {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .educativo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .deretiro {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.segurosp {
+  display: flexbox;
+  font-size: 3rem;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #f2b21d;
+  border-radius: 10px;
+}
+
+.fotocasa {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+.accidente {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+#mainperso .acs {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+#mainperso .h3s {
+  text-align: center;
+}
+
+.educativo {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+.deretiro {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+/*                             EMPIEZA LA PAG "Empresariales.html"                    */
+#mainempresa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2empresariales {
+  background-color: #f2b21d;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  font-size: 3rem;
+  border-radius: 10px;
+}
+
+.foto1 {
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+  border: solid 3px black;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.foto2 {
+  background: linear-gradient(to left, #36d1dc, #5b86e5);
+  border: solid 3px black;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.foto3 {
+  background: linear-gradient(to left, #eacda3, #d6ae7b);
+  border: solid 3px black;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.parrafo {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.h4empresa {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  font-size: 1.5rem;
+  position: relative;
+  background-color: #f2b21d;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 800px) {
+  #mainempresa {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(3, 2fr);
+    font-family: "Times New Roman", Times, serif;
+  }
+  #mainempresa .h2empresariales {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  #mainempresa .foto1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2/3;
+  }
+  #mainempresa .foto2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #mainempresa .foto3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  #mainempresa .h4empresa {
+    grid-column: 2/3;
+    font-size: 2rem;
+  }
+}
+/*                             EMPIEZA LA PAG "Contacto.html"                    */
+#mainz {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-color: black;
+  border-style: double;
+  border-radius: 2%;
+  align-content: center;
+  justify-items: center;
+}
+
+@media (min-width: 400px) {
+  #mainz .form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+.contactoz {
+  color: darkcyan;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.form {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+  background-color: beige;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.parrafomapa {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/*PRUEBAS MEDIAQ PARA INDEX*/
+@media (min-width: 320px) {
+  #header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .h1 {
+    font-size: 25px;
+  }
+  /*Termina la sección header
+   comienza main*/
+  #main {
+    display: flexbox;
+    position: relative;
+  }
+  #main .subtitulo {
+    position: relative;
+    font-size: 1.5rem;
+    bottom: 5%;
+  }
+  #main .personales {
+    position: relative;
+    left: 15%;
+    font-size: 1rem;
+  }
+  #main .patrimoniales {
+    position: relative;
+    left: 15%;
+    font-size: 1rem;
+  }
+  #main .aside {
+    font-size: 1rem;
+    position: relative;
+    right: 20%;
+    top: 25%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
