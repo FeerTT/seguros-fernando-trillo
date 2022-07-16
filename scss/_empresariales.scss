@@ -1,0 +1,85 @@
+#mainempresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.h2empresariales{
+    background-color: $color-principal;
+    position: relative;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    font-size: 3rem;
+    border-radius: 10px;
+}
+.foto1{
+   @include cuadro(linear-gradient(to left, #ff5f6d , #ffc371));
+    
+}
+.foto2{
+    @include cuadro(linear-gradient(to left, #36d1dc , #5b86e5));
+    
+}
+
+.foto3{
+    @include cuadro( linear-gradient(to left, #eacda3 , #d6ae7b));
+   
+}
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: $color-secundario;
+}
+
+.h4empresa{
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    font-size: 1.5rem;
+    position: relative;
+    
+    background-color: $color-principal; 
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+
+
+}
+@media (min-width:800px){
+    #mainempresa{
+        display: grid;
+        grid-template-columns: repeat(3,33.3%);
+        grid-template-rows: repeat(3,2fr);
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #mainempresa .h2empresariales{
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    #mainempresa .foto1{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .foto2{
+        grid-column:2 / 3;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .foto3{
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    #mainempresa .h4empresa{
+        grid-column: 2 / 3;
+        font-size: 2rem;
+    }
+}

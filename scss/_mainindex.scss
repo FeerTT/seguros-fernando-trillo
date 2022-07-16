@@ -1,0 +1,160 @@
+#mainn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    background-size: cover; 
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+#mainn .subtitulo {
+    grid-column-start:2;
+    grid-column-end:3;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+#mainn .personales{
+ grid-row-start:2;
+ grid-row-end:2;
+ grid-column-start: 1;
+ grid-column-end: 1;
+ align-items: center;
+ justify-items: center;
+ font-size: 2.5rem;
+}
+
+#mainn .personales ul{
+    color:$color-principal;
+    list-style:$estilos-listas;
+}
+
+#mainn .patrimoniales{
+    position: relative;
+    grid-row-start:3;
+    grid-row-end:3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    justify-items: center;
+    
+}
+#mainn .patrimoniales ul{
+    color:$color-principal;
+    list-style:$estilos-listas;
+}
+
+@media (min-width:320px){
+    #mainn{
+        grid-template-columns: repeat(3,33.3%);
+        grid-template-rows: repeat(20,5%);
+        font-size: 1rem
+    }
+    #mainn .subtitulo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        font-size: 1.2rem;
+    }
+    #mainn .personales{
+        position: relative;
+        top: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        font-size: 1rem;
+    }
+    #mainn .patrimoniales{
+        position: relative;
+        top: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        font-size: 1rem;
+    }
+    #mainn .aside{
+        position: relative;
+        top: 1rem;
+        grid-column-start:1;
+        grid-column-end: 4;
+        grid-row-start: 13;
+        grid-row-end: 15;
+        font-size: 5px;
+    }
+    #mainn .creador{
+        position: relative;
+        top: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start:16;
+        grid-row-end: 19;
+    }
+
+}
+@media (min-width:480px){
+    #mainn .subtitulo{
+        font-size: 2rem;
+    }
+    #mainn .personales{
+        font-size: 1.5rem;
+    }
+    #mainn .patrimoniales{
+        font-size: 1.5rem;
+    }
+   
+    
+}
+@media (min-width:1024px){
+    #mainn{
+        grid-template-columns: repeat(3,33.3%);
+        grid-template-rows: repeat(10,10%);
+    }
+    #mainn .subtitulo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        font-size: 3rem;
+    }
+    #mainn .personales{
+        position: relative;
+        top: 10%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        font-size: 2rem;
+    }
+    #mainn .patrimoniales{
+        position: relative;
+        top: 200px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        font-size: 2rem;
+    }
+    #mainn .aside{
+        grid-column-start:3;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    #mainn .creador{
+        position: relative;
+        top: 80px;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start:8;
+        grid-row-end: 10;
+    }
+}

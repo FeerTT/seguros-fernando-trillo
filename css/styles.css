@@ -1,89 +1,9 @@
-@charset "UTF-8";
-#main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 3fr);
-  background-image: url(../img/probandoimagenes.webp);
-  background-size: cover;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-}
-
-#main .subtitulo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-}
-
-#main .personales {
-  position: relative;
-  left: 4%;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  align-items: center;
-  justify-items: center;
-  font-size: 2.5rem;
-}
-
-#main .personales ul {
-  color: #f2b21d;
-  list-style: square;
-}
-
-#main .patrimoniales {
-  position: relative;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5rem;
-  justify-items: center;
-}
-
-#main .patrimoniales ul {
-  color: #f2b21d;
-  list-style: square;
-}
-
-.aside {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 3;
-  font-size: 2.5rem;
-  color: white;
-}
-
-#aside h2 {
-  display: block;
-  font-size: 2rem;
-  padding: 55;
-  margin: 55;
-  position: relative;
-  left: 35%;
-  bottom: 70px;
-}
-
-#aside h3 {
-  display: block;
-  position: relative;
-  left: 10%;
-}
-
-/*                             EMPIEZA LA PAG "Trayectoria.html                    */
 #mains {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  background-image: url(./img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg);
+  background-image: url(../img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg);
   height: 1000px;
   width: cover;
   background-repeat: no-repeat;
@@ -143,7 +63,6 @@
     font-size: 3rem;
   }
 }
-/*CODIGO AGREGADO DE CAMBIOS RECIENTES ANTES DE 2DA ENTREGA*/
 .container {
   color: white;
 }
@@ -159,6 +78,113 @@
 
 .footer {
   color: white;
+}
+
+#mainperso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  #mainperso .segurosp {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  #mainperso {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  #mainperso .segurosp {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  #mainperso .fotocasa {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .accidente {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .educativo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #mainperso .deretiro {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+.segurosp {
+  display: flexbox;
+  font-size: 3rem;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-color: #f2b21d;
+  border-radius: 10px;
+}
+
+.fotocasa {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+.accidente {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+#mainperso .acs {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+#mainperso .h3s {
+  text-align: center;
+}
+
+.educativo {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
+}
+
+.deretiro {
+  border: solid 2px black;
+  border-radius: 10px;
+  position: relative;
+  margin: 2rem;
+  padding: 2rem;
+  background: linear-gradient(to left, #ff5f6d, #ffc371);
 }
 
 #mainn {
@@ -316,115 +342,6 @@
     grid-row-end: 10;
   }
 }
-/*                             EMPIEZA LA PAG "PERSONALES.HTML"                    */
-#mainperso {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 320px) {
-  #mainperso .segurosp {
-    font-size: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  #mainperso {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  #mainperso .segurosp {
-    display: flex;
-    justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  #mainperso .fotocasa {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #mainperso .accidente {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #mainperso .educativo {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  #mainperso .deretiro {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-}
-.segurosp {
-  display: flexbox;
-  font-size: 3rem;
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: #f2b21d;
-  border-radius: 10px;
-}
-
-.fotocasa {
-  border: solid 2px black;
-  border-radius: 10px;
-  position: relative;
-  margin: 2rem;
-  padding: 2rem;
-  background: linear-gradient(to left, #ff5f6d, #ffc371);
-}
-
-.accidente {
-  border: solid 2px black;
-  border-radius: 10px;
-  position: relative;
-  margin: 2rem;
-  padding: 2rem;
-  background: linear-gradient(to left, #ff5f6d, #ffc371);
-}
-
-#mainperso .acs {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-}
-
-#mainperso .h3s {
-  text-align: center;
-}
-
-.educativo {
-  border: solid 2px black;
-  border-radius: 10px;
-  position: relative;
-  margin: 2rem;
-  padding: 2rem;
-  background: linear-gradient(to left, #ff5f6d, #ffc371);
-}
-
-.deretiro {
-  border: solid 2px black;
-  border-radius: 10px;
-  position: relative;
-  margin: 2rem;
-  padding: 2rem;
-  background: linear-gradient(to left, #ff5f6d, #ffc371);
-}
-
-/*                             EMPIEZA LA PAG "Empresariales.html"                    */
 #mainempresa {
   display: flex;
   flex-direction: column;
@@ -518,7 +435,6 @@
     font-size: 2rem;
   }
 }
-/*                             EMPIEZA LA PAG "Contacto.html"                    */
 #mainz {
   font-family: "Times New Roman", Times, serif;
   display: flex;
@@ -571,44 +487,6 @@
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
-}
-
-/*PRUEBAS MEDIAQ PARA INDEX*/
-@media (min-width: 320px) {
-  #header {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .h1 {
-    font-size: 25px;
-  }
-  /*Termina la sección header
-   comienza main*/
-  #main {
-    display: flexbox;
-    position: relative;
-  }
-  #main .subtitulo {
-    position: relative;
-    font-size: 1.5rem;
-    bottom: 5%;
-  }
-  #main .personales {
-    position: relative;
-    left: 15%;
-    font-size: 1rem;
-  }
-  #main .patrimoniales {
-    position: relative;
-    left: 15%;
-    font-size: 1rem;
-  }
-  #main .aside {
-    font-size: 1rem;
-    position: relative;
-    right: 20%;
-    top: 25%;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

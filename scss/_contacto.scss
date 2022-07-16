@@ -1,0 +1,57 @@
+
+#mainz{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-color: black;
+    border-style: double;
+    border-radius: 2%;
+    align-content: center;
+    justify-items: center;
+       
+}
+@media (min-width:400px){
+    #mainz .form{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+}
+
+.contactoz{
+    color: darkcyan;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    height: 3rem;
+    font-size: 2rem;
+}
+.form{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    background-color:beige;
+    
+}
+.nombre{
+    display: flex;
+    justify-content: center;
+} 
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    
+}
+.parrafomapa{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}

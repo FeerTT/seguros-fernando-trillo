@@ -1,0 +1,18 @@
+//aplicando mixin para facilitar página personales.html
+@mixin cuadrado {
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    margin: 2rem;
+    padding: 2rem;
+    background: linear-gradient(to left, #ff5f6d , #ffc371);
+}
+
+//aplicando mixin con distintos colores para facilitar página empresariales.html
+@mixin cuadro ($colorfondo) { 
+    background: $colorfondo;
+    border: solid 3px black;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;  
+}
