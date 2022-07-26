@@ -3,7 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   position: relative;
-  background-image: url(../img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg);
+  background-image: url(../img/quebec-1920x1080-4k-hd-wallpaper-st-ferdinand-canada-pink-sunrise-850.jpg); 
   height: 1000px;
   width: cover;
   background-repeat: no-repeat;
@@ -442,7 +442,7 @@
   justify-content: center;
   border-color: black;
   border-style: double;
-  border-radius: 2%;
+  border-radius: 1%;
   align-content: center;
   justify-items: center;
 }
